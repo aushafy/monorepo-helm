@@ -5,13 +5,5 @@ metadata:
   labels:
     {{- include "cilist-be.labels" . | nindent 4 }}
 data:
-  # cara pertama - static
-  # BASE_URL_PORT: {{ .Values.configuration.BASE_URL_PORT }}
-  # DATABASE_USERNAME: {{ .Values.configuration.DATABASE_USERNAME }}
-  # DATABASE_PASSWORD: {{ .Values.configuration.DATABASE_PASSWORD }}
-  # DATABASE_DATABASE: {{ .Values.configuration.DATABASE_DATABASE }}
-  # DATABASE_HOST: {{ .Values.configuration.DATABASE_HOST }}
-  # DATABASE_PORT: {{ .Values.configuration.DATABASE_PORT }}
-
   # cara kedua - dinamis
   {{ toYaml .Values.configuration | nindent 2 }}

@@ -11,12 +11,12 @@ image:
   tag: "latest"
 
 configuration:
-  BASE_URL_PORT: 5000
-  DATABASE_USERNAME: cilist
-  DATABASE_PASSWORD: cilist
-  DATABASE_DATABASE: cilist
-  DATABASE_HOST: 192.168.1.1
-  DATABASE_PORT: 3306
+  BASE_URL_PORT: "5000"
+  DATABASE_USERNAME: 
+  DATABASE_PASSWORD: 
+  DATABASE_DATABASE: 
+  DATABASE_HOST: ""
+  DATABASE_PORT: "3306"
 
 imagePullSecrets: []
 nameOverride: ""
