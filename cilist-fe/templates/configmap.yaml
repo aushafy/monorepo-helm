@@ -5,4 +5,4 @@ metadata:
   labels:
     {{- include "cilist-fe.labels" . | nindent 4 }}
 data:
-  REACT_APP_BACKEND_URL: "http://{{ .Values.ipbe }}:90"
+  REACT_APP_BACKEND_URL: "http://{{ .Values.configuration.backend_url }}:{{ .Values.configuration.backend_port }}"

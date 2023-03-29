@@ -11,7 +11,7 @@ image:
   tag: "latest"
 
 configuration:
-  backend_url: cilist-be.default.svc
+  backend_url: cilist-be.default
   backend_port: 5000
 
 imagePullSecrets: []

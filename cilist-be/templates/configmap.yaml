@@ -5,5 +5,5 @@ metadata:
   labels:
     {{- include "cilist-be.labels" . | nindent 4 }}
 data:
-  # cara kedua - dinamis
+  # # cara kedua - dinamis
   {{ toYaml .Values.configuration | nindent 2 }}
